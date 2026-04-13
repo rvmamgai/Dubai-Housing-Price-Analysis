@@ -97,14 +97,14 @@ These measures dynamically update based on user selections and filters.
 
 ## 📁 Project Structure
 
-Dubai-Housing-Price-Analysis/
-│
-├── dataset/
-├── sql/
-├── powerbi/
-├── report/
-├── images/
-└── README.md
+Dubai-Housing-Price-Analysis
+
+- dataset → raw data
+- sql → SQL queries
+- powerbi → dashboard file
+- report → project report
+- images → screenshot
+- README.md → documentation
 
 ---
 
