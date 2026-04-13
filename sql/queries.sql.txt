@@ -1,0 +1,29 @@
+create database labmentix_as;
+
+use labmentix_as;
+
+select * from housing_price_dataset;
+
+select Price from housing_price_dataset 
+group by price 
+order by price;
+
+delete from housing_price_dataset 
+where price < 0;
+
+delete from housing_price_dataset 
+where price < 2360;
+
+alter table housing_price_dataset 
+add price_category varchar(10);
+
+update housing_price_dataset 
+set price_category =
+case 
+    when price < 165638 then "Budget" 
+    when price between 165638 and 328916 then "Mid-Range" 
+    else "High-End" 
+end;
+
+SELECT MAX(price), MIN(price), AVG(price) 
+FROM housing_price_dataset;
